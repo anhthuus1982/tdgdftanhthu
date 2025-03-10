@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+</head>
+<body>
+    <h1>Thông tin người dùng</h1>
+    <p>Hoạt động: {{ nguoi_dung['hoat_dong'] }}</p>
+    <p>Số dư: {{ so_du }} USDT</p>
+    <p>Ký hiệu: {{ ", ".join(nguoi_dung['ky_hieu']) if nguoi_dung['ky_hieu'] else 'Chưa có' }}</p>
+    <p>% Số dư: {{ nguoi_dung['phan_tram'] }}%</p>
+</body>
+</html>
